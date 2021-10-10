@@ -1,0 +1,73 @@
+/*Pertama kita atur tampilan dari judul dan identitas*/
+.Judul {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 200px;
+}
+h1 {
+    font-size: 22px;
+}
+p {
+    font-size: 12px;
+}
+/*Kemudian kita atur box dari kalkulator (letak, batas, dan lebar dari kalkulatornya*/
+.kalkulator {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 400px;
+}
+/*Kemudian kita atur warna, lebar, dan ukuran text pada layar yang akan menampilkan angka-angka dari kalkulator*/
+.layar-kalkulator {
+    width: 100%;
+    height: 100px;
+    background-color: #252525;
+    color: #fff;
+    text-align: right;
+    font-size: 36px;
+    border: none;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+/*Selanjutnya kita atur tampilan dari tombol-tombol dari kalkulatornya*/
+/*pertama atur lebar tiap tombol menjadi 100%*/
+.tombol-kalkulator {
+    width: 100%;
+}
+/*atur pula display menjadi 'flex' agar urut dan rapi */
+.row {
+    display: flex;
+}
+/*Kemudian atur height, background-color, border, font-size, color, width dan outline*/
+button {
+    height: 80px;
+    background-color: grey;
+    border: 1px solid black;
+    font-size: 32px;
+    color: #fff;
+    width: 25%;
+    outline: none ;
+
+}
+/*atur lebar AC dan 0 menjadi 50%*/
+.all-clear, .zero-btn {
+    width: 50%;
+}
+/*Atur warna background dari tanda operator menjadi warna yang berbeda dari tombol numerik lainnya*/
+.operator, .equal-sign {
+    background-color: red;
+}
+.all-clear, .percentage {
+    color: red;
+    background-color: white;
+}
+/*Atur warna background saat tombol ditekan*/
+button:hover {
+    background-color: darkgrey;
+}
+.operator:hover, .equal-sign:hover {
+    background-color: darkred;
+}
+.all-clear:hover, .percentage:hover {
+    background-color: pink;
+}

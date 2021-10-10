@@ -1,0 +1,57 @@
+<!-- Untuk membuat kalkulator web sederhana, pertama kita harus membuat 3 file (html, css, javascript) terlebh dahulu. setelah itu kita akan mulai membuat kode di text html-->
+<!--Pertama buat bagian head-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Kedua, sambungka link file css yang nanti akan kita gunakan untuk membuat desain dari kalkulatornya.-->
+    <link rel="stylesheet" href="kalkulator.css">
+    <title>Kalkulator</title>
+</head>
+<!--Ketiga, buat bagian body yang nanti akan berisi bagian-bagian dari kalkulatornya (tombol yang berisi angka dan tanda).-->
+<body>
+    <div class= "Judul">
+    <h1>KALKULATOR WEB SEDERHANA</h1>
+    <p>Muhammad Izzulhaq</p>
+    </div>
+    <div class="kalkulator">
+        <input type="text" class="layar-kalkulator" value="0" disabled />
+        <div class="tombol-kalkulator">
+            <div class="row">
+                <button class="all-clear">AC</button>
+                <button class="percentage" value="%">&percnt;</button>
+                <button class="operator" value="/">&divide;</button>
+            </div>
+            <div class="row">
+                <button class="number" value="7">7</button>
+                <button class="number" value="8">8</button>
+                <button class="number" value="9">9</button>
+                <button class="operator" value="*">&times;</button>
+            </div>
+            <div class="row">
+                <button class="number" value="4">4</button>
+                <button class="number" value="5">5</button>
+                <button class="number" value="6">6</button>
+                <button class="operator" value="-">-</button>
+            </div>
+            <div class="row">
+                <button class="number" value="1">1</button>
+                <button class="number" value="2">2</button>
+                <button class="number" value="3">3</button>
+                <button class="operator" value="+">+</button>
+            </div>
+            <div class="row">
+                <button class="number zero-btn" value="0">0</button>
+                <button class="decimal" value=".">.</button>
+                <button class="equal-sign">=</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+<!--Kelima, hubungkan file javascript yang nanti akan menjadi operator dari kalkulatornya-->
+<!--PASTIKAN MENULIS DI LUAR BODY!!!-->
+<script type="text/javascript" src="kalkulator.js"></script>
+</html>
